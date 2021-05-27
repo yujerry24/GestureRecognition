@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeFragment">
+
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ca.uwaterloo.cs349.CanvasRecognize
+                    android:background="@drawable/border_one"
+                    android:id="@+id/recognize_gesture"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7">
+            </ca.uwaterloo.cs349.CanvasRecognize>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_one">
+                    <ca.uwaterloo.cs349.RecognizeResult
+                            android:id="@+id/gesture_result_one"
+                            android:layout_width="360px"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_one">>
+                    </ca.uwaterloo.cs349.RecognizeResult>
+                    <ca.uwaterloo.cs349.RecognizeResult
+                            android:id="@+id/gesture_result_two"
+                            android:layout_width="360px"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border_one">>
+                    </ca.uwaterloo.cs349.RecognizeResult>
+                <ca.uwaterloo.cs349.RecognizeResult
+                        android:id="@+id/gesture_result_three"
+                        android:layout_width="360px"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_one">>
+                </ca.uwaterloo.cs349.RecognizeResult>
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
